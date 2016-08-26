@@ -1,6 +1,6 @@
 {
   "name": "abind",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Aubo bind instance methods of classes.",
   "main": "lib",
   "browser": "shim/browser",
@@ -22,8 +22,7 @@
     "url": "https://github.com/a-labo/abind/issues"
   },
   "homepage": "https://github.com/a-labo/abind#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "ababel": "^1.1.2",
     "ababel-es2015": "^1.0.6",
