@@ -1,12 +1,12 @@
 {
   "name": "abind",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Aubo bind instance methods of classes.",
-  "main": "lib",
+  "main": "shim/node",
   "browser": "shim/browser",
   "scripts": {
     "test": "./ci/test.js",
-    "prepublish": "./ci/build.js && ./ci/browser.js"
+    "prepublish": "./ci/build.js && ./ci/shim.js"
   },
   "repository": "a-labo/abind",
   "keywords": [
