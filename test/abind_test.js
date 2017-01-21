@@ -20,7 +20,6 @@ describe('abind', function () {
   }))
 
   it('Abind', () => co(function * () {
-
     class Talker {
       constructor (name) {
         const s = this
@@ -32,10 +31,19 @@ describe('abind', function () {
         const s = this
         return `Hi, i'm ${s.name}`
       }
+
+      get yesName () {
+        const s = this
+        return `Yes,${s.name}`
+      }
     }
 
-    let { sayHi } = new Talker('Tom')
+    let talker = new Talker('Tom')
+    let { sayHi, yesName } = talker
     assert.equal(sayHi(), "Hi, i'm Tom")
+    assert.equal(yesName, 'Yes,Tom')
+    talker.name = 'John'
+    assert.equal(talker.yesName, 'Yes,John')
   }))
 })
 
