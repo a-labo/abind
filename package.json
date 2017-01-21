@@ -1,6 +1,6 @@
 {
   "name": "abind",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Aubo bind instance methods of classes.",
   "main": "shim/node",
   "browser": "shim/browser",
