@@ -4,14 +4,12 @@ const abind = require('abind')
 
 class Talker {
   constructor (name) {
-    const s = this
-    s.name = name
-    abind(s)
+    this.name = name
+    abind(this)
   }
 
   sayHi () {
-    const s = this
-    return `Hi, i'm ${s.name}`
+    return `Hi, i'm ${this.name}`
   }
 }
 
